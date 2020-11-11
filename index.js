@@ -93,17 +93,12 @@ const carOne = new Car('Jetta', 30)
 function Baby(name, age, favoriteToy) {
   Person.call(this, name, age)
   this.favoriteToy = favoriteToy
-  const object = {
-    "eat": Person.prototype.eat(),
-    
-  }
-  
 }
 Baby.prototype.play = function () {
   return `Playing with ${this.favoriteToy}`
 }
 const babyOne = new Baby('Timmy', 1, 'Rattle')
-/* 
+/* dd
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
